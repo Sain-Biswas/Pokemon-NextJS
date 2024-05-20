@@ -1,6 +1,5 @@
 import dbConnect from "@/lib/dbConnection";
 import singlePokemonFetch from "@/lib/functions/SinglePokemon";
-import SinglePokemonModel, { SinglePokemon } from "@/models/SinglePokemon";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
