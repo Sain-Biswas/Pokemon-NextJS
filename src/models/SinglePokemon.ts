@@ -1,4 +1,48 @@
 import mongoose, { Schema, Document } from "mongoose";
+import { RefMove, RefMoveSchema, RefPokemon, RefPokemonSchema } from "./Common";
+
+
+interface EvolutionDetails extends Document {
+    _id: boolean,
+    level: number,
+    time: string,
+    trigger: string
+}
+
+const EvolutionDetailsSchema: Schema<EvolutionDetails> = new Schema({
+    _id: false,
+    level: Number,
+    time: String,
+    trigger: String
+});
+
+interface EvolutionChain extends Document {
+    details: EvolutionDetails[],
+    _id: boolean,
+    id: number,
+    name: string,
+    types: string[]
+}
+
+const EvolutionChainSchema: Schema<EvolutionChain> = new Schema({
+    _id: false,
+    id: Number,
+    details: [EvolutionDetailsSchema],
+    name: String,
+    types: [String]
+});
+
+interface BaseStats extends Document {
+    _id: boolean,
+    name: string,
+    value: number
+}
+
+const BaseStatsSchema: Schema<BaseStats> = new Schema({
+    _id: false,
+    name: String,
+    value: Number
+});
 
 export interface SinglePokemon extends Document {
     id: number,
@@ -12,15 +56,15 @@ export interface SinglePokemon extends Document {
     haveGenderDifference: boolean,
     canMegaEvolve: boolean,
     canGMax: boolean,
-    evolutionChain: { details: { level: number, time: string, trigger: string }[], id: number, name: string, types: string[] }[],
+    evolutionChain: EvolutionChain[],
     abilities: string[],
     hiddenAbilities: string[],
     region: string,
-    basestats: { name: string, value: number }[],
+    basestats: BaseStats[],
     weight: number
     height: number,
-    varieties: { id: number, name: string, types: string[] }[],
-    moves: { id: number, name: string, type: string },
+    varieties: RefPokemon[],
+    moves: RefMove,
     isLegendary: boolean,
     isMythical: boolean,
     eggGroups: string[],
@@ -40,39 +84,15 @@ const SinglePokemonSchema: Schema<SinglePokemon> = new Schema({
     haveGenderDifference: Boolean,
     canMegaEvolve: Boolean,
     canGMax: Boolean,
-    evolutionChain: [{
-        details: [{
-            _id: false,
-            level: Number,
-            time: String,
-            trigger: String
-        }],
-        _id: false,
-        id: Number,
-        name: String,
-        types: [String]
-    }],
+    evolutionChain: [EvolutionChainSchema],
     abilities: [String],
     hiddenAbilities: [String],
     region: String,
-    basestats: [{
-        name: String,
-        value: Number
-    }],
+    basestats: [BaseStatsSchema],
     height: Number,
     weight: Number,
-    varieties: [{
-        _id: false,
-        id: Number,
-        name: String,
-        types: [String]
-    }],
-    moves: [{
-        _id: false,
-        id: Number,
-        name: String,
-        type: String
-    }],
+    varieties: [RefPokemonSchema],
+    moves: [RefMoveSchema],
     isLegendary: Boolean,
     isMythical: Boolean,
     eggGroups: [String],
