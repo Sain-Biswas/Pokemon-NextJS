@@ -156,7 +156,7 @@ function AlternateFormCard({ variety }: { variety: RefPokemon }) {
         </p>
         <div className="mt-3 flex gap-2">
           {variety.types.map((type: string) => (
-            <TypeBadge type={type} size="w-5 h-5 sm:w-10 sm:h-10" />
+            <TypeBadge key={type} type={type} size="w-5 h-5 sm:w-10 sm:h-10" />
           ))}
         </div>
       </div>

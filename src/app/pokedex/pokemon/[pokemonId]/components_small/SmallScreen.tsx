@@ -343,7 +343,7 @@ const SmallScreen: React.FC<SubComponentProps> = ({
             </div>
             <div className="mb-2 flex flex-wrap justify-center gap-3">
               {data.eggGroups.map((egg) => (
-                <Badge>{egg}</Badge>
+                <Badge key={`egg-${egg}`}>{egg}</Badge>
               ))}
             </div>
           </article>
@@ -389,7 +389,7 @@ const SmallScreen: React.FC<SubComponentProps> = ({
             </div>
             <div className="mb-2 flex w-full flex-wrap justify-center gap-3">
               {doubleDamageFrom.map((type) => (
-                <TypeBadge type={type} />
+                <TypeBadge key={type} type={type} />
               ))}
               {doubleDamageFrom.length == 0 && (
                 <p className="font-bold sm:text-lg">None</p>
@@ -406,7 +406,7 @@ const SmallScreen: React.FC<SubComponentProps> = ({
             </div>
             <div className="mb-2 flex w-full flex-wrap justify-center gap-3">
               {doubleDamageTo.map((type) => (
-                <TypeBadge type={type} />
+                <TypeBadge key={type} type={type} />
               ))}
               {doubleDamageTo.length == 0 && (
                 <p className="font-bold sm:text-lg">None</p>
@@ -423,7 +423,7 @@ const SmallScreen: React.FC<SubComponentProps> = ({
             </div>
             <div className="mb-2 flex w-full flex-wrap justify-center gap-3">
               {halfDamageFrom.map((type) => (
-                <TypeBadge type={type} />
+                <TypeBadge key={type} type={type} />
               ))}
               {halfDamageFrom.length == 0 && (
                 <p className="font-bold sm:text-lg">None</p>
@@ -440,7 +440,7 @@ const SmallScreen: React.FC<SubComponentProps> = ({
             </div>
             <div className="mb-2 flex w-full flex-wrap justify-center gap-3">
               {halfDamageTo.map((type) => (
-                <TypeBadge type={type} />
+                <TypeBadge key={type} type={type} />
               ))}
               {halfDamageTo.length == 0 && (
                 <p className="font-bold sm:text-lg">None</p>
@@ -457,7 +457,7 @@ const SmallScreen: React.FC<SubComponentProps> = ({
             </div>
             <div className="mb-2 flex w-full flex-wrap justify-center gap-3">
               {noDamageFrom.map((type) => (
-                <TypeBadge type={type} />
+                <TypeBadge key={type} type={type} />
               ))}
               {noDamageFrom.length == 0 && (
                 <p className="font-bold sm:text-lg">None</p>
@@ -474,7 +474,7 @@ const SmallScreen: React.FC<SubComponentProps> = ({
             </div>
             <div className="mb-2 flex w-full flex-wrap justify-center gap-3">
               {noDamageTo.map((type) => (
-                <TypeBadge type={type} />
+                <TypeBadge key={type} type={type} />
               ))}
               {noDamageTo.length == 0 && (
                 <p className="font-bold sm:text-lg">None</p>
@@ -532,7 +532,10 @@ function EvolutionFroms({
             {evo.details.length > 0 && (
               <div className="flex items-center justify-center gap-1 p-2">
                 {evo.details.map((detail: EvolutionDetails) => (
-                  <div className="rounded-md border border-purple-500 p-1">
+                  <div
+                    key={`evo-${detail.level}`}
+                    className="rounded-md border border-purple-500 p-1"
+                  >
                     {detail.time && (
                       <p className="font-rowdies text-xs sm:text-sm">
                         Time: {detail.time}
@@ -576,7 +579,11 @@ function EvolutionFroms({
                 <p className="font-rowdies sm:text-3xl">{evo.name}</p>
                 <div className="flex gap-2">
                   {evo.types.map((type: string) => (
-                    <TypeBadge type={type} size="w-5 h-5 sm:w-10 sm:h-10" />
+                    <TypeBadge
+                      key={type}
+                      type={type}
+                      size="w-5 h-5 sm:w-10 sm:h-10"
+                    />
                   ))}
                 </div>
                 <Link
