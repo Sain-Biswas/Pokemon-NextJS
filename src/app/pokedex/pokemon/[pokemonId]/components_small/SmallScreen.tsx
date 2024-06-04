@@ -528,7 +528,10 @@ function EvolutionFroms({
       </div>
       <div className="flex w-full flex-col gap-2 px-3">
         {evolution.map((evo) => (
-          <div className="w-full overflow-hidden rounded-lg bg-accent">
+          <div
+            key={evo.id}
+            className="w-full overflow-hidden rounded-lg bg-accent"
+          >
             {evo.details.length > 0 && (
               <div className="flex items-center justify-center gap-1 p-2">
                 {evo.details.map((detail: EvolutionDetails) => (
