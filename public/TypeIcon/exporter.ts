@@ -16,24 +16,30 @@ import PSYCHIC from './psychic.svg';
 import ROCK from './rock.svg';
 import STEEL from './steel.svg';
 import WATER from './water.svg';
+import SHADOW from './shadow.svg';
+import UNKNOWN from './unknown.svg';
 
-export const TypeIcons = {
-    'bug': BUG,
-    'dark': DARK,
-    'dragon': DRAGON,
-    'electric': ELECTRIC,
-    'fairy': FAIRY,
-    'fighting': FIGHTING,
-    'fire': FIRE,
-    'flying': FLYING,
-    'ghost': GHOST,
-    'grass': GRASS,
-    'ground': GROUND,
-    'ice': ICE,
-    'normal': NORMAL,
-    'poison': POISON,
-    'psychic': PSYCHIC,
-    'rock': ROCK,
-    'steel': STEEL,
-    'water': WATER
+const TypeIcons: { [key: string]: any } = {
+    "bug": BUG,
+    "dark": DARK,
+    "dragon": DRAGON,
+    "electric": ELECTRIC,
+    "fairy": FAIRY,
+    "fighting": FIGHTING,
+    "fire": FIRE,
+    "flying": FLYING,
+    "ghost": GHOST,
+    "grass": GRASS,
+    "ground": GROUND,
+    "ice": ICE,
+    "normal": NORMAL,
+    "poison": POISON,
+    "psychic": PSYCHIC,
+    "rock": ROCK,
+    "steel": STEEL,
+    "water": WATER,
+    "shadow": SHADOW,
+    "unknown": UNKNOWN
 }
+
+export default TypeIcons;
