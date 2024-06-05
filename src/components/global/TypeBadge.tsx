@@ -28,7 +28,9 @@ const TypeBadge: React.FC<TypeBadgeProps> = ({ type, size }) => {
             <Image src={svg} alt="" fill className="object-contain" />
           </AspectRatio>
         </div>
-        <p className="hidden font-rowdies text-2xl lg:block">{upperType}</p>
+        <p className="hidden pr-1 font-rowdies text-2xl lg:block">
+          {upperType}
+        </p>
       </Link>
     </Badge>
   );

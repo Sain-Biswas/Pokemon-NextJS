@@ -2,8 +2,6 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 
-import squarePokeball from "@/../public/Global/square-pokeball.webp";
-
 import {
   EvolutionChain,
   EvolutionDetails,
@@ -63,7 +61,7 @@ const SmallScreen: React.FC<SubComponentProps> = ({
   return (
     <main className="md:hidden">
       <section
-        className="mb-4 flex flex-col items-center justify-center pt-2"
+        className="mb-4 flex flex-col items-center justify-center pt-5"
         style={{
           background: `linear-gradient(to bottom, var(--${type1}), var(--${type2}), transparent)`,
         }}
@@ -130,11 +128,11 @@ const SmallScreen: React.FC<SubComponentProps> = ({
           </TabsContent>
         </Tabs>
         <div className="flex flex-col gap-1">
-          <p className="text-center font-rowdies text-4xl sm:text-6xl lg:text-8xl">
-            {data.name}
-          </p>
           <p className="text-center font-rowdies text-4xl text-gray-400 before:content-['#'] sm:text-6xl">
             {data.id}
+          </p>
+          <p className="text-center font-rowdies text-4xl sm:text-6xl lg:text-8xl">
+            {data.name}
           </p>
           <div className="flex justify-center gap-4">
             {data.types.map((type) => (
