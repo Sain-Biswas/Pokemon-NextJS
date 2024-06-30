@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
-import { Inter, Rowdies } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+
+import localFonts from "next/font/local";
+
 import NextTopLoader from "nextjs-toploader";
 import { ThemeProvider } from "@/components/theme-provider";
 import { NavBar } from "@/components/navbar";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const rowdies = Rowdies({
-  subsets: ["latin"],
+const roboto = localFonts({
+  src: "../fonts/Roboto.ttf",
+  display: "swap",
+  variable: "--font-sans",
+});
+const rowdies = localFonts({
+  src: "../fonts/Rowdies.ttf",
+  display: "swap",
   variable: "--font-rowdies",
-  weight: ["300", "400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          inter.variable,
+          roboto.variable,
           rowdies.variable,
           "min-h-screen bg-background font-sans",
         )}

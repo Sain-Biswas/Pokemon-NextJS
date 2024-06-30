@@ -62,7 +62,7 @@ const MediumScreen: React.FC<SubComponentProps> = ({
   } = typeRelations;
 
   return (
-    <main className="hidden md:block lg:hidden">
+    <main className="hidden md:block xl:hidden">
       <section
         className="mb-6 grid grid-cols-2 pt-2"
         style={{

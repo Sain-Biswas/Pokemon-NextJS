@@ -1,4 +1,8 @@
+import "./LargeScreenPokemonStyles.css";
+import "./ColorScheme.css";
+
 import { SinglePokemon } from "@/models/SinglePokemon";
+import TopLargeScreen from "./TopLargeScreen";
 
 interface SubComponentProps {
   pokemon: string;
@@ -30,7 +34,11 @@ const LargeScreen: React.FC<SubComponentProps> = ({
     noDamageTo,
   } = typeRelations;
 
-  return <main className="hidden lg:block">Large Screen</main>;
+  return (
+    <main className="hidden xl:block">
+      <TopLargeScreen pokemon={data} type1={type1} type2={type2} />
+    </main>
+  );
 };
 
 export default LargeScreen;

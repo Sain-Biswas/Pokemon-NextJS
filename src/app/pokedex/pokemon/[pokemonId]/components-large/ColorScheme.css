@@ -1,0 +1,503 @@
+.normal {
+  --cat-type-inner: #837d6d;
+  --cat-type-border: #5d5747;
+
+  --base-stats-second-inner: #f4eede;
+  --base-stats-second-border: #e1dbcb;
+  --base-stats-main-inner: #ece6d6;
+  --base-stats-main-border: #dad4c4;
+
+  --right-body-inner: #f4eede;
+  --right-border-top-bott: #cec8b8;
+  --right-border-out-dark: #bfb9a9;
+  --right-border-out-light: #e1dbcb;
+
+  --ability-inner: #9d9787;
+  --ability-border: #767060;
+  --hid-ability-inner: #b0aa9a;
+  --hid-ability-border: #807a6a;
+  --height-inner: #bcb6a6;
+  --height-border: #bbb5a5;
+  --weight-inner: #cfc9b9;
+  --weight-border: #a19b8b;
+  --gender-inner: #dbd5c5;
+  --gender-border: #bbb5a5;
+  --egg-inner: #ebe5d5;
+  --egg-border: #ebe5d5;
+}
+
+.electric {
+  --cat-type-inner: #a78d17;
+  --cat-type-border: #7c6917;
+
+  --base-stats-second-inner: #fff0b1;
+  --base-stats-second-border: #ffe35d;
+  --base-stats-main-inner: #ffeb8e;
+  --base-stats-main-border: #fbdd4b;
+
+  --right-body-inner: #fff0b1;
+  --right-border-top-bott: #f1d341;
+  --right-border-out-dark: #e3c533;
+  --right-border-out-light: #ffe35d;
+
+  --ability-inner: #c4a717;
+  --ability-border: #998217;
+  --hid-ability-inner: #d6b826;
+  --hid-ability-border: #a38b17;
+  --height-inner: #e0c230;
+  --height-border: #bb9e17;
+  --weight-inner: #f2d342;
+  --weight-border: #c8aa18;
+  --gender-inner: #fcde4c;
+  --gender-border: #e0c130;
+  --egg-inner: #ffea89;
+  --egg-border: #eacc3a;
+}
+
+.bug {
+  --cat-type-inner: #818c24;
+  --cat-type-border: #5b6601;
+
+  --base-stats-second-inner: #f1f9ae;
+  --base-stats-second-border: #dee69b;
+  --base-stats-main-inner: #e9f1a6;
+  --base-stats-main-border: #d7df94;
+
+  --right-body-inner: #f1f9ae;
+  --right-border-top-bott: #ccd76f;
+  --right-border-out-dark: #bdc860;
+  --right-border-out-light: #dee69b;
+
+  --ability-inner: #9ba63e;
+  --ability-border: #747f17;
+  --hid-ability-inner: #aeb951;
+  --hid-ability-border: #7e8921;
+  --height-inner: #bac55d;
+  --height-border: #939e36;
+  --weight-inner: #cad877;
+  --weight-border: #9faa42;
+  --gender-inner: #d6e38b;
+  --gender-border: #b9c266;
+  --egg-inner: #e8f0a5;
+  --egg-border: #c4cc81;
+}
+
+.dark {
+  --cat-type-inner: #6c4f53;
+  --cat-type-border: #4b3539;
+
+  --base-stats-second-inner: #f3e8eb;
+  --base-stats-second-border: #ded3d6;
+  --base-stats-main-inner: #eadfe2;
+  --base-stats-main-border: #d6cbce;
+
+  --right-body-inner: #f3e8eb;
+  --right-border-top-bott: #d7c1c8;
+  --right-border-out-dark: #ded3d6;
+  --right-border-out-light: #c8b2b9;
+
+  --ability-inner: #92757d;
+  --ability-border: #664e54;
+  --hid-ability-inner: #a98c95;
+  --hid-ability-border: #70575b;
+  --height-inner: #b89ba4;
+  --height-border: #896b73;
+  --weight-inner: #d0b3bb;
+  --weight-border: #977a82;
+  --gender-inner: #dec2ca;
+  --gender-border: #b79aa2;
+  --egg-inner: #ecd9de;
+  --egg-border: #c0acb2;
+}
+
+.dragon {
+  --cat-type-inner: #6763d3;
+  --cat-type-border: #433fa9;
+
+  --base-stats-second-inner: #ebebfb;
+  --base-stats-second-border: #d3d1f7;
+  --base-stats-main-inner: #e0dff9;
+  --base-stats-main-border: #cac8f5;
+
+  --right-body-inner: #ebebfb;
+  --right-border-top-bott: #bbb9f2;
+  --right-border-out-dark: #d3d1f7;
+  --right-border-out-light: #a9a6ef;
+
+  --ability-inner: #837ee8;
+  --ability-border: #7a75e6;
+  --hid-ability-inner: #9995ec;
+  --hid-ability-border: #6460d0;
+  --height-inner: #a7a3ef;
+  --height-border: #7a75e6;
+  --weight-inner: #bcbaf3;
+  --weight-border: #8883e9;
+  --gender-inner: #cbc9f5;
+  --gender-border: #a6a2ee;
+  --egg-inner: #dfddf9;
+  --egg-border: #b4b0f1;
+}
+
+.fairy {
+  --cat-type-inner: #e287e0;
+  --cat-type-border: #d060ce;
+
+  --base-stats-second-inner: #fff0fe;
+  --base-stats-second-border: #fee1fd;
+  --base-stats-main-inner: #feeafd;
+  --base-stats-main-border: #fedcfc;
+
+  --right-body-inner: #fff0fe;
+  --right-border-top-bott: #fed1fc;
+  --right-border-out-dark: #fee1fd;
+  --right-border-out-light: #fdc5fb;
+
+  --ability-inner: #f1a4ef;
+  --ability-border: #dd7bda;
+  --hid-ability-inner: #fab7f7;
+  --hid-ability-border: #e184df;
+  --height-inner: #fdc5fb;
+  --height-border: #ec9bea;
+  --weight-inner: #fed3fc;
+  --weight-border: #f2a3ef;
+  --gender-inner: #fedcfc;
+  --gender-border: #fdc1fb;
+  --egg-inner: #fee9fd;
+  --egg-border: #fdccfc;
+}
+
+.fighting {
+  --cat-type-inner: #b1574f;
+  --cat-type-border: #88342c;
+
+  --base-stats-second-inner: #fde4e2;
+  --base-stats-second-border: #fbc6c1;
+  --base-stats-main-inner: #fcd8d4;
+  --base-stats-main-border: #fabcb6;
+
+  --right-body-inner: #fde4e2;
+  --right-border-top-bott: #f9aaa2;
+  --right-border-out-dark: #fbc6c1;
+  --right-border-out-light: #f6938a;
+
+  --ability-inner: #ce7067;
+  --ability-border: #a24b42;
+  --hid-ability-inner: #e4837a;
+  --hid-ability-border: #d2746b;
+  --height-inner: #f29086;
+  --height-border: #c56860;
+  --weight-inner: #f9aba3;
+  --weight-border: #d2746b;
+  --gender-inner: #fabdb8;
+  --gender-border: #f18f85;
+  --egg-inner: #fcd5d3;
+  --egg-border: #f8a097;
+}
+
+.fire {
+  --cat-type-inner: #cb6624;
+  --cat-type-border: #a34201;
+
+  --base-stats-second-inner: #ffeadc;
+  --base-stats-second-border: #ffd1b3;
+  --base-stats-main-inner: #ffe0ca;
+  --base-stats-main-border: #ffc8a4;
+
+  --right-body-inner: #ffeadc;
+  --right-border-top-bott: #ffb98a;
+  --right-border-out-dark: #ffd1b3;
+  --right-border-out-light: #ffa56a;
+
+  --ability-inner: #e5803e;
+  --ability-border: #be5917;
+  --hid-ability-inner: #f89351;
+  --hid-ability-border: #c86321;
+  --height-inner: #ffa164;
+  --height-border: #dd7836;
+  --weight-inner: #ffba8c;
+  --weight-border: #e98442;
+  --gender-inner: #ffcaa6;
+  --gender-border: #ffa062;
+  --egg-inner: #ffdec8;
+  --egg-border: #ffb07b;
+}
+
+.flying {
+  --cat-type-inner: #5b7fcf;
+  --cat-type-border: #3559a9;
+
+  --base-stats-second-inner: #e8eeff;
+  --base-stats-second-border: #cddcff;
+  --base-stats-main-inner: #dde7ff;
+  --base-stats-main-border: #c3d5ff;
+
+  --right-body-inner: #e8eeff;
+  --right-border-top-bott: #b2c9ff;
+  --right-border-out-dark: #9dbbff;
+  --right-border-out-light: #cddcff;
+
+  --ability-inner: #7599e9;
+  --ability-border: #4e72c2;
+  --hid-ability-inner: #88acfc;
+  --hid-ability-border: #587ccc;
+  --height-inner: #99b8ff;
+  --height-border: #6d91e1;
+  --weight-inner: #b4caff;
+  --weight-border: #799ded;
+  --gender-inner: #c5d6ff;
+  --gender-border: #97b7ff;
+  --egg-inner: #dbe6ff;
+  --egg-border: #a8c3ff;
+}
+
+.ghost {
+  --cat-type-inner: #8171b5;
+  --cat-type-border: #5b4b8f;
+
+  --base-stats-second-inner: #efebff;
+  --base-stats-second-border: #ded4ff;
+  --base-stats-main-inner: #e8e2ff;
+  --base-stats-main-border: #d7ccff;
+
+  --right-body-inner: #efebff;
+  --right-border-top-bott: #ccbdff;
+  --right-border-out-dark: #bdadf1;
+  --right-border-out-light: #ded4ff;
+
+  --ability-inner: #9b8bcf;
+  --ability-border: #7464a8;
+  --hid-ability-inner: #ae9ee2;
+  --hid-ability-border: #7e6eb2;
+  --height-inner: #baaaee;
+  --height-border: #9383c7;
+  --weight-inner: #cdbeff;
+  --weight-border: #9f8fd3;
+  --gender-inner: #d8cdff;
+  --gender-border: #b9a9ed;
+  --egg-inner: #e7e0ff;
+  --egg-border: #c5b5f9;
+}
+
+.grass {
+  --cat-type-inner: #529e44;
+  --cat-type-border: #2c781e;
+
+  --base-stats-second-inner: #defdd1;
+  --base-stats-second-border: #bcf4aa;
+  --base-stats-main-inner: #cffabf;
+  --base-stats-main-border: #b5eda3;
+
+  --right-body-inner: #defdd1;
+  --right-border-top-bott: #9de98f;
+  --right-border-out-dark: #8eda80;
+  --right-border-out-light: #bcf4aa;
+
+  --ability-inner: #6cb85e;
+  --ability-border: #459137;
+  --hid-ability-inner: #7fcb71;
+  --hid-ability-border: #4f9b41;
+  --height-inner: #8bd77d;
+  --height-border: #64b056;
+  --weight-inner: #a7e58f;
+  --weight-border: #70bc62;
+  --gender-inner: #b3f19b;
+  --gender-border: #8ad67c;
+  --egg-inner: #cdfabd;
+  --egg-border: #96e288;
+}
+
+.ground {
+  --cat-type-inner: #927d41;
+  --cat-type-border: #6c571b;
+
+  --base-stats-second-inner: #f7eed4;
+  --base-stats-second-border: #eadbae;
+  --base-stats-main-inner: #f1e6c4;
+  --base-stats-main-border: #e3d4a7;
+
+  --right-body-inner: #f7eed4;
+  --right-border-top-bott: #d7c89b;
+  --right-border-out-dark: #c8b98c;
+  --right-border-out-light: #e6dbb9;
+
+  --ability-inner: #ac975b;
+  --ability-border: #857034;
+  --hid-ability-inner: #bfaa6e;
+  --hid-ability-border: #8f7a3e;
+  --height-inner: #cbb67a;
+  --height-border: #a48f53;
+  --weight-inner: #dec98d;
+  --weight-border: #b09b5f;
+  --gender-inner: #ead599;
+  --gender-border: #cab579;
+  --egg-inner: #f0e5c3;
+  --egg-border: #d0c194;
+}
+
+.ice {
+  --cat-type-inner: #40959f;
+  --cat-type-border: #176d77;
+
+  --base-stats-second-inner: #d4f9fd;
+  --base-stats-second-border: #adedf5;
+  --base-stats-main-inner: #c3f5fa;
+  --base-stats-main-border: #a6e6ee;
+
+  --right-body-inner: #d4f9fd;
+  --right-border-top-bott: #8be0ea;
+  --right-border-out-dark: #7cd1db;
+  --right-border-out-light: #adedf5;
+
+  --ability-inner: #5aafb9;
+  --ability-border: #338892;
+  --hid-ability-inner: #6dc2cc;
+  --hid-ability-border: #3d929c;
+  --height-inner: #79ced8;
+  --height-border: #52a7b1;
+  --weight-inner: #8ce1eb;
+  --weight-border: #5eb3bd;
+  --gender-inner: #98edf7;
+  --gender-border: #78cdd7;
+  --egg-inner: #c0f4fa;
+  --egg-border: #84d9e3;
+}
+
+.poison {
+  --cat-type-inner: #7f4691;
+  --cat-type-border: #522b5f;
+
+  --base-stats-second-inner: #f4defa;
+  --base-stats-second-border: #e7b9f5;
+  --base-stats-main-inner: #eecef8;
+  --base-stats-main-border: #e3acf3;
+
+  --right-body-inner: #f4defa;
+  --right-border-top-bott: #e8b0f6;
+  --right-border-out-dark: #d9a1e7;
+  --right-border-out-light: #e7b9f5;
+
+  --ability-inner: #a158b3;
+  --ability-border: #6e3d80;
+  --hid-ability-inner: #b970cc;
+  --hid-ability-border: #7b448d;
+  --height-inner: #c980db;
+  --height-border: #9652a8;
+  --weight-inner: #d69ae7;
+  --weight-border: #995cab;
+  --gender-inner: #e3adf3;
+  --gender-border: #bb7fcd;
+  --egg-inner: #edccf8;
+  --egg-border: #cc8edd;
+}
+
+.psychic {
+  --cat-type-inner: #d94f78;
+  --cat-type-border: #b32952;
+
+  --base-stats-second-inner: #ffe6ee;
+  --base-stats-second-border: #ffcada;
+  --base-stats-main-inner: #ffdae6;
+  --base-stats-main-border: #ffbfd3;
+
+  --right-body-inner: #ffe6ee;
+  --right-border-top-bott: #ffadc6;
+  --right-border-out-dark: #ff97b6;
+  --right-border-out-light: #ffcada;
+
+  --ability-inner: #f36992;
+  --ability-border: #cc426b;
+  --hid-ability-inner: #ff80a6;
+  --hid-ability-border: #d64c75;
+  --height-inner: #ff92b3;
+  --height-border: #eb618a;
+  --weight-inner: #ffafc7;
+  --weight-border: #f76d96;
+  --gender-inner: #ffc1d4;
+  --gender-border: #ff91b2;
+  --egg-inner: #ffd9e5;
+  --egg-border: #ffa3bf;
+}
+
+.rock {
+  --cat-type-inner: #866a4d;
+  --cat-type-border: #61462c;
+
+  --base-stats-second-inner: #f5e9db;
+  --base-stats-second-border: #e6d1b9;
+  --base-stats-main-inner: #f1dfca;
+  --base-stats-main-border: #dec9b1;
+
+  --right-body-inner: #f5e9db;
+  --right-border-top-bott: #d0bca4;
+  --right-border-out-dark: #bfab94;
+  --right-border-out-light: #e6d1b9;
+
+  --ability-inner: #a28466;
+  --ability-border: #795e41;
+  --hid-ability-inner: #b69879;
+  --hid-ability-border: #a6896a;
+  --height-inner: #c4a586;
+  --height-border: #997c5f;
+  --weight-inner: #d9bb9a;
+  --weight-border: #a6896a;
+  --gender-inner: #e7c8a6;
+  --gender-border: #c3a485;
+  --egg-inner: #f0dec8;
+  --egg-border: #c8b39c;
+}
+
+.steel {
+  --cat-type-inner: #7c7a8f;
+  --cat-type-border: #565469;
+
+  --base-stats-second-inner: #eeecff;
+  --base-stats-second-border: #dad8ed;
+  --base-stats-main-inner: #e5e3f8;
+  --base-stats-main-border: #d3d1e6;
+
+  --right-body-inner: #eeecff;
+  --right-border-top-bott: #c7c5da;
+  --right-border-out-dark: #b8b6cb;
+  --right-border-out-light: #dad8ed;
+
+  --ability-inner: #9694a9;
+  --ability-border: #6f6d82;
+  --hid-ability-inner: #a9a7bc;
+  --hid-ability-border: #79778c;
+  --height-inner: #b5b3c8;
+  --height-border: #8e8ca1;
+  --weight-inner: #c8c6db;
+  --weight-border: #9a98ad;
+  --gender-inner: #d4d2e7;
+  --gender-border: #b4b2c7;
+  --egg-inner: #e4e2f7;
+  --egg-border: #c0bed3;
+}
+
+.water {
+  --cat-type-inner: #3d8ecc;
+  --cat-type-border: #1768a6;
+
+  --base-stats-second-inner: #e1f2ff;
+  --base-stats-second-border: #bfe3ff;
+  --base-stats-main-inner: #d3ebff;
+  --base-stats-main-border: #b2ddff;
+
+  --right-body-inner: #e1f2ff;
+  --right-border-top-bott: #9cd4ff;
+  --right-border-out-dark: #81c8ff;
+  --right-border-out-light: #bfe3ff;
+
+  --ability-inner: #57a8e6;
+  --ability-border: #3081bf;
+  --hid-ability-inner: #6abbf9;
+  --hid-ability-border: #3a8bc9;
+  --height-inner: #7cc6ff;
+  --height-border: #4fa0de;
+  --weight-inner: #9ed5ff;
+  --weight-border: #5bacea;
+  --gender-inner: #b4deff;
+  --gender-border: #7ac5ff;
+  --egg-inner: #d1ebff;
+  --egg-border: #90ceff;
+}

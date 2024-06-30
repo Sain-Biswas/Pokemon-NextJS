@@ -18,17 +18,17 @@ const TypeBadge: React.FC<TypeBadgeProps> = ({ type, size }) => {
   const svg = TypeIcons[`${lowerType}`];
 
   return (
-    <Badge className={cn("p-1", `bg-${lowerType}`)}>
+    <Badge className={cn("p-1 xl:px-2", `bg-${lowerType}`)}>
       <Link
         href={`/pokedex/pokemon/${lowerType}`}
-        className="flex items-center"
+        className="flex items-center overflow-hidden"
       >
         <div className={cn(size || "h-7 w-7 sm:h-10 sm:w-10")}>
-          <AspectRatio ratio={1 / 1} className="">
+          <AspectRatio ratio={1 / 1} className="xl:skew-x-[40deg]">
             <Image src={svg} alt="" fill className="object-contain" />
           </AspectRatio>
         </div>
-        <p className="hidden pr-1 font-rowdies text-2xl lg:block">
+        <p className="hidden pr-1 font-rowdies text-2xl lg:block xl:skew-x-[40deg]">
           {upperType}
         </p>
       </Link>
